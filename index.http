@@ -1,0 +1,51 @@
+### Create a new note
+GET http://localhost:3000/
+
+###
+POST http://localhost:3000/addItem
+Content-Type: application/json
+
+{
+    "title": "Learn Html",
+    "description": "To learn static website",
+    "archeive": "0",
+    "is_delete":"0"
+}
+
+
+###
+
+GET http://localhost:3000/getNotes
+
+
+###
+
+GET http://localhost:3000/getArcheive
+
+###
+
+
+GET http://localhost:3000/getisDelete
+
+
+###
+
+PUT  http://localhost:3000/updateArchivedNotes
+Content-Type: application/json
+
+{
+    "id": "7",
+    "archeive": "1"
+}
+
+###
+
+PUT  http://localhost:3000/updateDeletedNotes
+Content-Type: application/json
+
+{
+    "id": "10",
+    "is_delete": "1"
+}
+
+
